@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GUESS THE NUMBER </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maincon">
+
+            <div class="result">
+                <div>Correct : 
+                    <span id="correct">0</span></div>
+                    <div  >Incorrect : <span id="incorrect">0</span></div>
+                </div>
+           
+            <div class="con">
+                <div class="question">
+                    <input placeholder="Your Answer" id="input" type="number">
+                    <div>+</div>
+                    <div id="random">0</div>
+                    <div>=</div>
+                    <div id="total">0</div>
+                </div>
+                <button onclick="check()">Check</button>
+                <button onclick="randomFun()">New</button>
+            </div>
+            <div class="levels">
+                <h2>Change levels</h2>
+                <div class="lvls">
+                <button onclick="lvl(10)">Lvl 1</button>
+                <button onclick="lvl(100)">Lvl 2</button>
+                <button onclick="lvl(1000)">Lvl 3</button>
+                <button onclick="lvl(10000)">Lvl 4</button>
+                <button onclick="lvl(40000)">Lvl 5</button>
+                <button onclick="lvl(800000)">Lvl 5</button>
+                    
+                        </div>
+            </div>
+        </div>
+
+        <div id="finalresult" class="final">
+<h2>Correct Answer</h2>
+<button onclick="randomFun()">New</button>
+
+        </div>
+        <div id="finalincorrect" class="final">
+            <h2>InCorrect Answer</h2>
+            <button onclick="randomFun()">New</button>
+            
+                    </div>
+        <script src="source.js"></script>
+    </body>
+</html>

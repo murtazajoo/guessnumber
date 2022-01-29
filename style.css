@@ -1,0 +1,131 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#color{
+    color: #05386B;
+    color: #379683;
+    color: #5CDB95;
+    color: #8EE4AF;
+    color: #EDF5E1;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d6cac;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif !important;
+}
+/* .con{
+    text-align: center;
+    margin: 30px 0px;
+    box-shadow: 
+    8px 4px 10px 1px #fff,
+    -8px 4px 10px 1px #fff,
+    8px -4px 10px 1px #fff,
+    -8px -4px 10px 1px #fff;
+} */
+
+.maincon{
+    width: 90%;
+    background-color: #3074b8;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 30px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    color: #EDF5E1;
+    position: relative;
+}
+.lvls{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.result{
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-between !important;
+    width: 80%;
+    margin: 10px 0;
+}
+.question{
+    display: flex;
+    font-size: 28px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+input{
+    text-align: center;
+    width: 25%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    color: #8EE4AF;
+    border-bottom: 1px solid #8EE4AF;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    font-size: 10px;
+    color: #8EE4AF;
+}
+
+button{
+    border: none;
+    padding: 8px 10px;
+    font-size: 15px;
+    margin: 5px 3px;
+    border-radius: 5px;
+    background-color:#379683;
+    text-transform: uppercase;
+}
+h2{
+    color: #EDF5E1;
+    margin: 20px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lvls button{
+    font-size: 12px;
+    background-color: #EDF5E1;
+    color: #05386B;
+}
+.levels{
+    position: absolute;
+    bottom: 20px;
+}
+.final{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: orangered;
+    padding: 50px;
+}
+.final button{
+    color: orchid;
+    background-color: #333;
+    padding: 20px;
+}
